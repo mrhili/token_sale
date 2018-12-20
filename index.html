@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="src/css/starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+              <h1 class="text-center">DAPP TOKEN ICO SALE</h1>
+              <hr/>
+              <br/>
+          </div>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" class="text-center" style="display:none">
+            <p>
+              Introducing "Islamic coin" (IC)!
+              Token price is <span class="token-price"></span> Ether. You currently have <span class="dapp-balance"></span>&nbsp;IC.
+            </p>
+            <br/>
+            <form onSubmit="App.buyTokens(); return false;" role="form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+                  </input>
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
+                  </span>
+                </div>
+              </div>
+            </form>
+            <br>
+             <div class="progress">
+                <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+            <hr>
+            <p id="accountAddress"></p>
+          </div>
+        </div>
+
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <script src="src/js/jquery-3.3.1.min.js">
+    </script>
+
+    <script src="src/js/popper.min.js">
+    </script>
+
+    <script src="src/js/bootstrap.min.js">
+    </script>
+
+
+  <script src="src/js/web3.min.js"></script>
+
+  <script src="src/js/truffle-contract.min.js">
+    </script>
+
+    <script src="src/js/app.js">
+    </script>
+
+
+
+  </body>
+</html>

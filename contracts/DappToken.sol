@@ -58,7 +58,7 @@ contract DappToken {
 
       allowance[_from][msg.sender] -= _value;
 
-      Transfer(_from, _to, _value);
+      emit Transfer(_from, _to, _value);
 
       return true;
   }

@@ -1,6 +1,15 @@
 var DappToken = artifacts.require("./DappToken.sol");
 
 
+/*
+
+You will need it in the console
+
+DappToken.deployed().then(function(instance) { tokenInstance = instance;});
+
+    */
+
+
 contract('DappToken', function(accounts){
 
 	var tokenInstance;
